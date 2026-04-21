@@ -1,7 +1,3 @@
-<br>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Shanny-dot/VisionText-Image-Reader/main/client/public/favicon.ico" width="80" alt="VisionText Logo">
-</p>
 <h1 align="center">VisionText — Smart OCR Platform</h1>
 
 <p align="center">
@@ -18,39 +14,14 @@
 
 ---
 
-## ✨ Features
+## Interface Sneak Peek
 
-- 🔐 **Premium Split-Panel Authentication:** A sleek, Luminous-inspired login UI with secure JWT access natively powered by Supabase.
-- 🗂 **Drag-and-Drop Uploader:** Seamless, in-memory image uploading using Multer. No disk-writes necessary.
-- 🧠 **Smart Extraction:** Powered by `Tesseract.js` for highly accurate Optical Character Recognition directly on the server.
-- 📜 **Historical Logs:** Automatically saves your extractions to a PostgreSQL database on Supabase so you can access your past text anytime.
-- 🖼 **Dynamic Modal Viewer:** Extracted results are presented in a smooth, glassmorphism-inspired Modal popup with one-click clipboard copying. 
-- ☁️ **Cloud Native:** Ready-to-deploy setups with CORS dynamic origin parsing specifically tailored for Render (Backend) and Netlify (Frontend).
+<img width="500" height="275" alt="Screenshot 2026-04-21 at 6 28 44 PM" src="https://github.com/user-attachments/assets/b8c6ac57-c60f-4ba1-ad6e-d32237e8213c" />
+<img width="500" height="275" alt="Screenshot 2026-04-21 at 6 27 27 PM" src="https://github.com/user-attachments/assets/bfd72ef6-2de3-4791-a016-9d917b7bd078" />
+<img width="500" height="275" alt="Screenshot 2026-04-21 at 6 27 51 PM" src="https://github.com/user-attachments/assets/27dd387d-e1b5-43e0-9e8e-a2dbf2c3d3ae" />
+<img width="500" height="275" alt="Screenshot 2026-04-21 at 6 27 39 PM" src="https://github.com/user-attachments/assets/5cb0afd0-3b32-47d2-b934-dd2a91301ae4" />
+<img width="500" height="275" alt="Screenshot 2026-04-21 at 6 27 33 PM" src="https://github.com/user-attachments/assets/236acd3c-98b5-4f7a-b41b-9eafce0e471e" />
 
-## 🚀 Architectural Overview
-
-VisionText relies on a fully decoupled architecture:
-
-```mermaid
-graph LR
-A[React Frontend] -- Image Upload via POST --> B[Express Node Server]
-B -- Memory Storage --> C[Tesseract OCR Engine]
-B -- Validates JWT --> D[Supabase Auth]
-C -- Stores Image --> E[Supabase Storage]
-C -- Logs Data --> F[Supabase PostgreSQL]
-E -- URL --> F
-F -- Return JSON --> A
-```
-
-## 📸 Interface Sneak Peek
-
-### The Professional Dashboard
-Your main workspace features a clean sidebar navigation with quick-access text extraction via a seamless upload workflow.
-*(Add your screenshot here: `![Dashboard View](/path/to/img.png)`)*
-
-### History & Archive
-Beautifully colored, dynamic cards based on the context of the scanned document format (Legal, Financial, Reports, etc.)
-*(Add your screenshot here: `![History View](/path/to/img.png)`)*
 
 ---
 
@@ -110,10 +81,8 @@ npm start
 VisionText includes automated deployment routing for effortless hosting:
 - The **Frontend** can be deployed instantly to Netlify. A `netlify.toml` config handles all frontend routing.
 - The **Backend** can be deployed to Render using a Web Service pointed directly at the `server/` directory.
-
-*(Review `DEPLOYMENT_NETLIFY.md` for our customized step-by-step launch guide!)*
-
+  
 ---
 <p align="center">
-  Built with ❤️ for digital creators and data enthusiasts.
+  Built with ❤️ in India by Shantanu
 </p>
