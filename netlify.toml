@@ -1,0 +1,11 @@
+[build]
+  base = "client"
+  command = "npm install && npm run build"
+  publish = "client/build"
+
+# This rewrite rule ensures React Router works!
+# Without this, refreshing /dashboard will return a 404 Error on Netlify.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
