@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000' || 'https://vision-text-image-reader-taupe.vercel.app/dashboard',
   credentials: true,
 };
 app.use(cors(corsOptions));
